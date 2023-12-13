@@ -55,8 +55,7 @@
 }
 
 .service-image {
-    display: block;
-    margin: auto;
+    width: 100%;
   }
 
 .masthead .btn {
