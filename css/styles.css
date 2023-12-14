@@ -13076,11 +13076,6 @@ header.masthead .h1 {
 
 /*contact css*/
 
-
-.contact-title {
-  margin: 150px 30px 0px 450px
-
-}
 @media screen and (max-width: 768px) { /* 화면의 너비가 768px 이하일 때 적용 */
   .contact-title {
     margin: 50px 15px 0px 15px; /* 화면 크기에 맞게 마진 값을 조정 */
