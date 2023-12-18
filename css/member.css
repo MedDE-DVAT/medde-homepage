@@ -24,7 +24,7 @@
     margin-bottom: 5vw;
 }
 
-.member__content h3, h4 {
+.member__content h3, h4, h5 {
     text-align: center;
 }
 
@@ -43,3 +43,6 @@
     max-height: 300px;
 }
 
+h5 {
+    color: grey;
+}
