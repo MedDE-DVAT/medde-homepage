@@ -199,19 +199,14 @@ footer {
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 15px;
+  width: 42px;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 42px;
 	vertical-align: middle;
   display: inline-block;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
 }
 
 .footer-distributed .footer-center p{
