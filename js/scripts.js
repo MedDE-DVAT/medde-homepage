@@ -7,6 +7,12 @@
 // Scripts
 // 
 
+window.onload = pageLoad;
+function pageLoad() {
+    var margin_value = document.querySelector('.navbar').scrollHeight;
+    document.querySelector('.wrapper').style.marginTop = String(margin_value) + 'px';
+};
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
