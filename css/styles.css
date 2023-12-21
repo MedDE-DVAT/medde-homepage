@@ -13084,12 +13084,6 @@ header.masthead .h1 {
 }
 
 .wrapper {
-  margin-top: 1rem;
+  margin-top: 72px;
   flex: 1;
-}
-
-@media (min-width: 992px) {
-  .wrapper {
-    margin-top: 0;
-  }
 }
