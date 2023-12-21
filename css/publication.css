@@ -1,0 +1,32 @@
+.wrapper {
+    background-color: white;
+}
+
+.position-sticky {
+    top: 2rem;
+}
+
+.nav_pub li {
+    display: list-item;
+    list-style: none;
+    padding: 0;
+}
+
+.nav_pub ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_sub-title {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bfbfbf;
+    display: block;
+}
+
+.nav_pub a {
+    text-decoration: none;
+    color: inherit;
+}
