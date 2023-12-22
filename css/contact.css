@@ -1,13 +1,5 @@
-/*contact css*/
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: black;
-}
-
 .wrapper {
-    flex: 1;
+    margin-bottom: 50px;
 }
 
 .contact-info {

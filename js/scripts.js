@@ -117,11 +117,3 @@ function drags(dragElement, resizeElement, container) {
         resizeElement.removeClass('resizable');
     });
 }
-/* Overflow toggle */
-const hideOverflow = document.getElementById("overflow");
-
-hideOverflow.addEventListener("click", () => {
-  document.querySelector(".container").style.overflow = hideOverflow.checked
-    ? "hidden"
-    : "visible";
-});
