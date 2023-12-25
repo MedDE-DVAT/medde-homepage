@@ -1,23 +1,52 @@
 data = {
-    "dpc": 
-            [
-                {
-                    "title": "RefNet: 향상된 3차원 의료 영상 분할을 위한 UNet 기반의 분할 결과 개선 기법",
-                    "author": "조영완, 최종환, 서상민, 박상현",
-                    "journal": "2023 한국컴퓨터종합학술대회 (KCC2023)",
-                    "date": 2023
-                },
-                {
-                    "title": "폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구",
-                    "author": "김현진, 최종환, 이지은, 박상현",
-                    "journal": "2023 한국컴퓨터종합학술대회 (KCC2023)",
-                    "date": 2023
-                },
-                {
-                    "title": "의료 이미지 모달 변환을 위한 고주파 강조 필터링 기법의 효과 분석",
-                    "author": "이효정, 조영완, 박상현",
-                    "journal": "2023 한국소프트웨어종합학술대회 (KSC2023)",
-                    "date": 2023
-                },
-            ]
+	"dpc": {
+		"2023": [
+			{
+				"title": "의료 이미지 모달 변환을 위한 고주파 강조 필터링 기법의 효과 분석",
+				"author": "이효정, 조영완, 박상현",
+				"submit": "Korea Software Congress 2023",
+				"link": "",
+				"addi": ""
+			},
+			{
+				"title": "폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구",
+				"author": "김현진, 최종환, 이지은, 박상현",
+				"submit": "Korea Computer Congress 2023",
+				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11488189&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true",
+				"addi": ""
+			},
+			{
+				"title": "RefNet: 향상된 3차원 의료 영상 분할을 위한 UNet 기반의 분할 결과 개선 기법",
+				"author": "조영완, 최종환, 서상민, 박상현",
+				"submit": "Korea Computer Congress 2023",
+				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11488199&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true",
+				"addi": ""
+			},
+		]
+	},
+	"dpj": {},
+	"dp": {
+		"2023": [
+			{
+				"title": "이중 어텐션을 이용한 이미지 세그멘테이션 방법 및 이를 활용한 장치",
+				"author": "홍승균, 안성현, 조영완, 박상현",
+				"link": "#",
+				"country": "대한민국",
+				"number": "10-2023-0124697"
+			}
+		]
+	},
+	"ipc": {},
+	"ipj": {},
+	"ip": {
+		"2023": [
+			{
+				"title": "Image Segmentation Method Using Dual Attention And Device Using The Same",
+				"author": "Justin Hong, Sunghyun Ahn, Youngwan Jo, Sanghyun Park",
+				"link": "#",
+				"country": "PCT",
+				"number": "PCT/KR2023/020370"
+			}
+		]
+	}
 }
