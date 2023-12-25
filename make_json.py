@@ -25,12 +25,12 @@ while True:
         
         title = input("제목을 입력해주세요\n")
         author = input("저자 혹은 출원자를 ,를 통해 입력해주세요\n")
+        link = input("논문 혹은 특허 링크를 입력해주세요\n")
         if ptype == "3":
             country = input("출원지를 입력해주세요\n")
             number = input("출원 번호를 입력해주세요\n")
         else:
             submit = input("학회 혹은 저널 이름을 입력해주세요\n")
-            link = input("논문 링크를 입력해주세요\n")
             addi = input("추가 정보를 입력해주세요\n")
 
         cat = category[region+ptype]
@@ -38,12 +38,12 @@ while True:
         temp = {}
         temp['title'] = title
         temp['author'] = author
+        temp['link'] = link
         if ptype == "3":
             temp['country'] = country
             temp['number'] = number
         else:
             temp['submit'] = submit
-            temp['link'] = link
             temp['addi'] = addi
             
         if year in json_data[cat].keys():
