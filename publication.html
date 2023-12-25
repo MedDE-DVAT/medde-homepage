@@ -16,7 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/publication.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="./src/assets/json/publication.json" type="text/javascript"></script>
 </head>
@@ -60,6 +59,7 @@
                 </div>
                 <div class="col-lg-6 paper-div">
                     <h1 id="page-title">International Journals</h1>
+                    <!-- 수정필요 -->
                     <div class="archive">
                         <ul class="grid_year">
                             <li>
@@ -70,87 +70,7 @@
                             </li>
                         </ul>
                     </div>
-                    <section id="2023" class="year-section">
-                        <h4 class="year">2023</h4>
-                        <div class="entries-list">
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">RefNet: 향상된 3차원 의료 영상 분할을 위한 UNet 기반의 분할 결과 개선 기법</a></h4>
-                                <p class="info">조영완, 최종환, 서상민, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                        </div>
-                        <a href="#page-title" class="back-to-top">Back to Top ↑</a>
-                    </section>
-                    <section id="2022" class="year-section">
-                        <h5 class="year">2022</h5>
-                        <div class="entries-list">
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">RefNet: 향상된 3차원 의료 영상 분할을 위한 UNet 기반의 분할 결과 개선 기법</a></h4>
-                                <p class="info">조영완, 최종환, 서상민, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                            <div class="list-item">
-                                <h4 class="title"><a class="paper-link" href="#">폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구</a></h4>
-                                <p class="info">김현진, 최종환, 이지은, 박상현, 2023 한국컴퓨터종합학술대회 (KCC2023)</p>
-                            </div>
-                        </div>
-                        <a href="#page-title" class="back-to-top">Back to Top ↑</a>
-                    </section>
-                    <section id="s2021" class="year-section">
-                        <h5 class="year">2021</h5>
-                        <div class="entries-list">
-                            <script>
-                                let sec_tag = document.querySelector('#s2021');
-                                let testData = JSON.parse(JSON.stringify(data));
-                                for (var i=0; i < testData['dpc'].length; i++) {
-                                    console.log(i);
-                                    let a_tag = document.createElement('a');
-                                    a_tag.className = 'paper-link';
-                                    a_tag.href = '#';
-                                    a_tag.innerHTML = testData['dpc'][i]['title'];
-
-                                    let h4_tag = document.createElement('h4');
-                                    h4_tag.className = 'title';
-                                    h4_tag.appendChild(a_tag);
-
-                                    let p_tag = document.createElement('p');
-                                    p_tag.className = 'info';
-                                    p_tag.innerHTML = testData['dpc'][i]['author'] + ', ' + testData['dpc'][i]['journal'];
-                                    
-                                    let div_tag = document.createElement('div');
-                                    div_tag.className = 'list-item';
-                                    div_tag.appendChild(h4_tag);
-                                    div_tag.appendChild(p_tag);
-
-                                    sec_tag.appendChild(div_tag);
-                                    console.log('ok');
-                                }
-                            </script>
-                        </div>
-                        <a href="#page-title" class="back-to-top">Back to Top ↑</a>
-                    </section>
+                    <!-- js로 추가됨 -->
                 </div>
             </div>
         </div>
@@ -193,5 +113,6 @@
             <img src="assets/img/logo.png" alt="Description" class="service-image"> 
         </div>
     </footer>
+    <script src="./js/publication.js"></script>
 </body>
 </html>
