@@ -30,6 +30,7 @@ data = {
 			{
 				"title": "이중 어텐션을 이용한 이미지 세그멘테이션 방법 및 이를 활용한 장치",
 				"author": "홍승균, 안성현, 조영완, 박상현",
+				"link": "#",
 				"country": "대한민국",
 				"number": "10-2023-0124697"
 			}
@@ -42,6 +43,7 @@ data = {
 			{
 				"title": "Image Segmentation Method Using Dual Attention And Device Using The Same",
 				"author": "Justin Hong, Sunghyun Ahn, Youngwan Jo, Sanghyun Park",
+				"link": "#",
 				"country": "PCT",
 				"number": "PCT/KR2023/020370"
 			}

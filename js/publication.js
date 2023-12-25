@@ -33,27 +33,54 @@ for (var i=0; i < keys.length; i++) {
 
     sec_tag.appendChild(h4_year);
 
-    for (var j=0; j < temp_data[keys[i]].length; j++) {
-        let a_tag = document.createElement('a');
-        a_tag.className = 'paper-link';
-        a_tag.href = temp_data[keys[i]][j]['link'];
-        a_tag.innerHTML = temp_data[keys[i]][j]['title'];
-
-        let h4_tag = document.createElement('h4');
-        h4_tag.className = 'title';
-        h4_tag.appendChild(a_tag);
-
-        let p_tag = document.createElement('p');
-        p_tag.className = 'info';
-        p_tag.innerHTML = temp_data[keys[i]][j]['author'] + "<br>" + keys[i] + ", " + temp_data[keys[i]][j]['submit'];
-
-        let div_tag = document.createElement('div');
-        div_tag.className = 'list-item';
-        div_tag.appendChild(h4_tag);
-        div_tag.appendChild(p_tag);
+    if (now == 'dp' || now == 'ip') {
+        for (var j=0; j < temp_data[keys[i]].length; j++) {
+            let a_tag = document.createElement('a');
+            a_tag.className = 'paper-link';
+            a_tag.href = temp_data[keys[i]][j]['link'];
+            a_tag.innerHTML = temp_data[keys[i]][j]['title'];
     
-        sec_tag.appendChild(div_tag);
-    }
+            let h4_tag = document.createElement('h4');
+            h4_tag.className = 'title';
+            h4_tag.appendChild(a_tag);
+    
+            let p_tag = document.createElement('p');
+            p_tag.className = 'info';
+            p_tag.innerHTML = temp_data[keys[i]][j]['author'] + "<br>" + keys[i] + ", " + temp_data[keys[i]][j]['country'] + ", " + temp_data[keys[i]][j]['number'];
+    
+            let div_tag = document.createElement('div');
+            div_tag.className = 'list-item';
+            div_tag.appendChild(h4_tag);
+            div_tag.appendChild(p_tag);
+        
+            sec_tag.appendChild(div_tag);
+        }
+    
+        paper.appendChild(sec_tag);
 
-    paper.appendChild(sec_tag);
+    } else {
+        for (var j=0; j < temp_data[keys[i]].length; j++) {
+            let a_tag = document.createElement('a');
+            a_tag.className = 'paper-link';
+            a_tag.href = temp_data[keys[i]][j]['link'];
+            a_tag.innerHTML = temp_data[keys[i]][j]['title'];
+    
+            let h4_tag = document.createElement('h4');
+            h4_tag.className = 'title';
+            h4_tag.appendChild(a_tag);
+    
+            let p_tag = document.createElement('p');
+            p_tag.className = 'info';
+            p_tag.innerHTML = temp_data[keys[i]][j]['author'] + "<br>" + keys[i] + ", " + temp_data[keys[i]][j]['submit'];
+    
+            let div_tag = document.createElement('div');
+            div_tag.className = 'list-item';
+            div_tag.appendChild(h4_tag);
+            div_tag.appendChild(p_tag);
+        
+            sec_tag.appendChild(div_tag);
+        }
+    
+        paper.appendChild(sec_tag);
+    }
 }

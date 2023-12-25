@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedDE-Contact</title>
+    <title>MedDE-Publication</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/publication.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/contact.css" rel="stylesheet" />
+    <script src="./src/assets/json/publication.json" type="text/javascript"></script>
 </head>
 <body>
-    <!-- Navigation--> 
+    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="index.html">MedDE</a>
@@ -36,21 +36,45 @@
             </div>
         </div>
     </nav>
-
-    <section class="wrapper">
-        <!-- Masthead-->
-        <div>
-            <h2 class="text-white" style="text-align: center; margin-top:50px;">Contact</h2>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-3">
+                    <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2 nav_pub">
+                        <span class="nav_sub-title">International</span>
+                        <ul>
+                            <li><a href="publication_ipj.html" class="">Journal</a></li>
+                            <li><a href="publication_ipc.html" class="">Conference</a></li>
+                            <li><a href="publication_ip.html" class="">Patent</a></li>
+                        </ul>
+                        <li>
+                            <span class="nav_sub-title">Domestic</span>
+                            <ul>
+                                <li><a href="publication_dpj.html" class="">Journal</a></li>
+                                <li><a href="publication_dpc.html" class="">Conference</a></li>
+                                <li><a href="publication_dp.html" class="">Patent</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-lg-6 paper-div">
+                    <h1 id="page-title">Domestic Conferences</h1>
+                    <!-- 수정필요 -->
+                    <div class="archive">
+                        <ul class="grid_year">
+                            <li>
+                                <a href="#2023">
+                                    <strong>2023</strong>
+                                    <span class="count">7</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- js로 추가됨 -->
+                </div>
+            </div>
         </div>
-        <div id="map"></div>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD6W5pZd5sgd9Qd6oJsGi1jRlM6bNX_pE&callback=initMap">
-        </script>
-        <div class="contact-info">
-            <p class> 주소 ㅣ 서울특별시 서대문구 연세로 50 연세대학교 제4공학관 D808 데이터공학 연구실</p>
-            <p class>연락처 ㅣ 02-2123-7757</p>
-            <p class>이메일 ㅣ medde.yonsei@gmail.com</p>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer-->
     <footer class="footer-distributed">
@@ -89,5 +113,6 @@
             <img src="assets/img/logo.png" alt="Description" class="service-image"> 
         </div>
     </footer>
+    <script src="./js/publication.js"></script>
 </body>
 </html>
