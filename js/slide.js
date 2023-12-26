@@ -2,9 +2,6 @@
 const slide = document.querySelector(".slide");
 let slideWidth = slide.clientWidth;
 
-// 버튼 엘리먼트 선택하기
-const prevBtn = document.querySelector(".slide_prev_button");
-const nextBtn = document.querySelector(".slide_next_button");
 
 // 슬라이드 전체를 선택해 값을 변경해주기 위해 슬라이드 전체 선택하기
 let slideItems = document.querySelectorAll(".slide_item");
@@ -43,10 +40,6 @@ slideItems[slideItems.length - 1].after(startElem);
 // 슬라이드 전체를 선택해 값을 변경해주기 위해 슬라이드 전체 선택하기
 slideItems = document.querySelectorAll(".slide_item");
 //
-let offset = slideWidth + currSlide;
-slideItems.forEach((i) => {
-  i.setAttribute("style", `left: ${-offset}px`);
-});
 
 function nextMove() {
   currSlide++;
@@ -119,16 +112,22 @@ function prevMove() {
   }
 }
 
-// 버튼 엘리먼트에 클릭 이벤트 추가하기
-nextBtn.addEventListener("click", () => {
-  // 이후 버튼 누를 경우 현재 슬라이드를 변경
-  nextMove();
+// 각 버튼마다 클릭 이벤트를 추가합니다.
+// 버튼 엘리먼트 선택하기
+let buttons = document.querySelectorAll(".slide_button");
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    let slideNum = button.getAttribute('data-slide');
+    currSlide = parseInt(slideNum) + 1;
+    let offset = slideWidth * currSlide;
+    slideItems.forEach((item) => {
+      item.style.left = -offset + 'px';
+    });
+    paginationItems.forEach((item) => item.classList.remove('active'));
+    paginationItems[currSlide - 1].classList.add('active');
+  });
 });
-// 버튼 엘리먼트에 클릭 이벤트 추가하기
-prevBtn.addEventListener("click", () => {
-  // 이전 버튼 누를 경우 현재 슬라이드를 변경
-  prevMove();
-});
+
 
 // 브라우저 화면이 조정될 때 마다 slideWidth를 변경하기 위해
 window.addEventListener("resize", () => {
@@ -204,3 +203,4 @@ slide.addEventListener("mouseout", () => {
     nextMove();
   }, 3000);
 });
+
