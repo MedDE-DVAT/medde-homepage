@@ -1,0 +1,50 @@
+data = {
+	"main_member": [
+		{
+			"img": "./assets/img/YoungWanJo.jpg",
+			"name": "Youngwan Jo",
+			"position": "CEO",
+			"Research_field": "Image to Image translation",
+			"email": "jyy1551@yonsei.ac.kr",
+		},
+		{
+			"img": "./assets/img/ShanghyunPark.jpg",
+			"name": "Shanghyun Park",
+			"position": "CTO",
+			"Research_field": "Professor",
+			"email": "sanghyun@yonsei.ac.kr",
+		},
+	],
+	"sub_member": [
+		{
+			"img": "./assets/img/HyojeongLee.jpg",
+			"name": "Hyojeong Lee",
+			"position": "AI Researcher",
+			"Research_field": "Image to Image translation",
+			"email": "hyojoy@yonsei.ac.kr",
+		},
+		{
+			"img": "./assets/img/HyunjinKim.jpg",
+			"name": "Hyunjin Kim",
+			"position": "AI Researcher",
+			"Research_field": "Segmentation",
+			"email": "hjkim99@yonsei.ac.kr",
+		},
+		{
+			"img": "./assets/img/SungHyunAhn.jpg",
+			"name": "SungHyun Ahn",
+			"position": "AI Researcher",
+			"Research_field": "Segmentation",
+			"email": "skd@yonsei.ac.kr",
+		},
+	],
+	"partners": [
+		{
+			"img": "./assets/img/성모병원.jpg",
+			"name": "서울성모병원",
+			"position": "",
+			"Research_field": "",
+			"email": "",
+		},
+	]
+}
