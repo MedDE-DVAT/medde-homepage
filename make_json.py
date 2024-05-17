@@ -2,7 +2,7 @@ import json
 import os
 
 
-file_path = './src/assets/json/publication.json'
+file_path = 'publication.js'
 category = {'11':'dpc', '12':'dpj', '13':'dp', '21':'ipc', '22':'ipj', '23':'ip'}
 
 if os.path.isfile(file_path):
