@@ -5,7 +5,7 @@ data = {
 				"title": "의료 이미지 모달 변환을 위한 고주파 강조 필터링 기법의 효과 분석",
 				"author": "이효정, 조영완, 박상현",
 				"submit": "Korea Software Congress 2023",
-				"link": "",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705169",
 				"addi": ""
 			},
 			
@@ -13,21 +13,28 @@ data = {
 				"title": "폴립 영역 분할을 위한 DIP 기반의 이미지 초해상화 및 데이터 증강 기법에 관한 연구",
 				"author": "김현진, 최종환, 이지은, 박상현",
 				"submit": "Korea Computer Congress 2023",
-				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11488189&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11488189",
 				"addi": ""
 			},
 			{
 				"title": "RefNet: 향상된 3차원 의료 영상 분할을 위한 UNet 기반의 분할 결과 개선 기법",
 				"author": "조영완, 최종환, 서상민, 박상현",
 				"submit": "Korea Computer Congress 2023",
-				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11488199&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11488199",
 				"addi": ""
 			},
 			{
 				"title": "FFAE: 비디오 이상 탐지를 위한 비디오 프레임 전처리 및 특징 융합 방법",
 				"author": "이기정, 안성현, 김현진, 박상현",
 				"submit": "Korea Computer Congress 2023",
-				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705154",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705154",
+				"addi": ""
+			},
+			{
+				"title": "C-Swin UNETR: 3D 의료 영상 분할을 위한 채널 어텐션이 적용된 Swin Transformer",
+				"author": "안성현, 김환희, 권세인, 박상현",
+				"submit": "Korea Computer Congress 2023",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11488179",
 				"addi": ""
 			},
 		]
@@ -38,7 +45,7 @@ data = {
 				"title": "Molpaint: 이미지 인페인팅 기법을 활용한분자구조 이미지 생성 및 신약개발 응용",
 				"author": "이기정, 최종환, 박상현",
 				"submit": "정보과학회 컴퓨팅의 실제 논문지(KTCP), Volume 30, Number 1, 37-42 pp.",
-				"link": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11666607",
+				"link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11666607",
 				"addi": ""
 			},
 		]
@@ -84,7 +91,7 @@ data = {
 				"title": "Dual Stream Fusion U-Net Transformers for 3D Medical Image Segmentation",
 				"author": "Justin Hong, Sunghyun Ahn, Youngwan Jo, Sanghyun Park (Justin Hong and Sunghyun Ahn are co-first authors.)",
 				"submit": "International Conference on Big Data and Smart Computing ",
-				"link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10488278",
+				"link": "https://ieeexplore.ieee.org/document/10488278",
 				"addi": ""
 			},
 		]
@@ -95,7 +102,7 @@ data = {
 				"title": "Making Anomalies More Anomalous: Video Anomaly Detection Using a Novel Generator and Destroyer",
 				"author": "Justin Hong, Sunghyun Ahn, Youngwan Jo, Sanghyun Park (Justin Hong and Sunghyun Ahn are co-first authors.)",
 				"submit": "IEEE Access ",
-				"link": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10462109",
+				"link": "https://ieeexplore.ieee.org/document/10462109",
 				"addi": ""
 			},
 		]
