@@ -124,6 +124,7 @@ data = {
 				"addi": "",
 				"date": "2024-01-17"	
 			},
+			
 			{
 				"title": "VideoPathCore: An Effective Method to Memorize Normality for Video Anomaly Detection",
 				"author": "Sunghyun Ahn, Youngwan Jo, Kijung Lee, Sanghyun Park",
@@ -144,6 +145,15 @@ data = {
 				"addi": "",
 				"date": "2024-03-07"
 			},
+			{
+				"title": "TACA-RNet: Tri-Axis Based Context-Aware Reverse Network for Multimodal Brain Tumor Segmentation",
+				"author": "Hyunjin Kim, Youngwan Jo, Hyojeong Lee, Sanghyun Park",
+				"submit": "Electronics (IF: 2.6, IF(%): 44.5) 2024, 13(10) ",
+				"link": "https://www.mdpi.com/2079-9292/13/10/1997",
+				"addi": "",
+				"date": "2024-05-20"
+			},
+			
 		]
 
 	},
