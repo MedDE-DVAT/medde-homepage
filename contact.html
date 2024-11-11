@@ -42,13 +42,40 @@
         <div>
             <h2 class="text-white" style="text-align: center; margin-top:50px;">Contact</h2>
         </div>
-        <div id="map"></div>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_3-vWqjx02hVowW1RY9n28W-GVl6dx-Y&callback=initMap">
+        
+        <!-- 카카오 지도 표시 영역 -->
+        <div id="map" style="width:700px;height:400px;"></div>
+        
+        <!-- 카카오 지도 API 스크립트 -->
+        <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6ebf50339d06cf13c77e51614115933e"></script>
+        <script type="text/javascript">
+            function initMap() {
+                var container = document.getElementById('map'); 
+                var options = { 
+                    center: new kakao.maps.LatLng(37.561965, 126.936017), // 연세대학교 위치 (위도, 경도)
+                    level: 3 // 확대 수준
+                };
+                
+                var map = new kakao.maps.Map(container, options); // 지도 생성 및 객체 리턴
+
+                // 마커 표시
+                var markerPosition  = new kakao.maps.LatLng(37.561965, 126.936017); 
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+                marker.setMap(map);
+            }
+
+            // 지도 초기화 함수 호출
+            window.onload = function() {
+                initMap();
+            };
         </script>
+    
         <div class="contact-info">
-            <p class> 주소 ㅣ 서울특별시 서대문구 연세로 50 연세대학교 제4공학관 D808 데이터공학 연구실</p>
-            <p class>연락처 ㅣ 02-2123-7757</p>
-            <p class>이메일 ㅣ medde.yonsei@gmail.com</p>
+            <p class="address">주소 ㅣ 서울특별시 서대문구 연세로 50 연세대학교 제4공학관 D808 데이터공학 연구실</p>
+            <p class="phone">연락처 ㅣ 02-2123-7757</p>
+            <p class="email">이메일 ㅣ medde.yonsei@gmail.com</p>
         </div>
     </section>
 

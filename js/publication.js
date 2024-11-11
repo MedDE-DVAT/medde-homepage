@@ -56,12 +56,18 @@ for (var i=0; i < keys.length; i++) {
 
     sec_tag.appendChild(h4_year);
 
+    let now_data = temp_data[now_year]
+
+    now_data.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date); // descending
+      })
+
     if (now == 'dp' || now == 'ip') {
-        for (var j=0; j < temp_data[now_year].length; j++) {
+        for (var j=0; j < now_data.length; j++) {
             let a_tag = document.createElement('a');
             a_tag.className = 'paper-link';
-            a_tag.href = temp_data[now_year][j]['link'];
-            a_tag.innerHTML = temp_data[now_year][j]['title'];
+            a_tag.href = now_data[j]['link'];
+            a_tag.innerHTML = now_data[j]['title'];
     
             let h4_tag = document.createElement('h4');
             h4_tag.className = 'title';
@@ -69,7 +75,7 @@ for (var i=0; i < keys.length; i++) {
     
             let p_tag = document.createElement('p');
             p_tag.className = 'info';
-            p_tag.innerHTML = temp_data[now_year][j]['author'] + "<br>" + now_year + ", " + temp_data[now_year][j]['country'] + ", " + temp_data[now_year][j]['number'];
+            p_tag.innerHTML = now_data[j]['author'] + "<br>" + now_year + ", " + now_data[j]['country'] + ", " + now_data[j]['number'] + "<br>DATE: " + now_data[j]['date'];
     
             let div_tag = document.createElement('div');
             div_tag.className = 'list-item';
@@ -82,11 +88,11 @@ for (var i=0; i < keys.length; i++) {
         paper.appendChild(sec_tag);
 
     } else {
-        for (var j=0; j < temp_data[now_year].length; j++) {
+        for (var j=0; j < now_data.length; j++) {
             let a_tag = document.createElement('a');
             a_tag.className = 'paper-link';
-            a_tag.href = temp_data[now_year][j]['link'];
-            a_tag.innerHTML = temp_data[now_year][j]['title'];
+            a_tag.href = now_data[j]['link'];
+            a_tag.innerHTML = now_data[j]['title'];
     
             let h4_tag = document.createElement('h4');
             h4_tag.className = 'title';
@@ -94,7 +100,7 @@ for (var i=0; i < keys.length; i++) {
     
             let p_tag = document.createElement('p');
             p_tag.className = 'info';
-            p_tag.innerHTML = temp_data[now_year][j]['author'] + "<br>" + now_year + ", " + temp_data[now_year][j]['submit'];
+            p_tag.innerHTML = now_data[j]['author'] + "<br>" + now_year + ", " + now_data[j]['submit'] + "<br>DATE: " + now_data[j]['date'];
     
             let div_tag = document.createElement('div');
             div_tag.className = 'list-item';
